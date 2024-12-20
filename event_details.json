@@ -16,13 +16,13 @@
     {
       "title": "MESA",
       "url": "https://docs.mesastar.org/en/24.08.1/",
-      "intro": "MESA is a powerful and versatile open-source software suite built to allow users to run experiments in stellar evolution. Stellar evolution calculations (i.e., stellar evolution tracks and detailed information about the evolution of internal and global properties) are a basic tool that enable a broad range of research in astrophysics. Areas that critically depend on high-fidelity and modern stellar evolution include asteroseismology, nuclear astrophysics, stellar populations, chemical evolution and population synthesis, astrobiology, binary stars, variable stars, supernovae, novae, compact objects, tidal disruption events, stellar hydrodynamics, and stellar activity.",
+      "intro": "MESA is a powerful and versatile open-source software suite built to allow users to run experiments in stellar evolution. Stellar evolution calculations are a basic tool that enable a broad range of research in various astrophysics areas such as asteroseismology, nuclear astrophysics, stellar populations, chemical evolution and population synthesis etc.",
       "logo": "assets/images/mesa.png"
     },
     {
       "title": "FLASH-X",
       "url": "https://flash-x.org/",
-      "intro": "Flash-X, is a highly composable multiphysics software system that can be used to simulate physical phenomena in several scientific domains. It is derived from FLASH, which has been a community code for several communities since late 1990s and early 2000s. The Flash-X architecture has been redesigned to be compatible with increasingly heterogeneous hardware platforms. A part of the redesign is a utilizing a newly designed performance portability layer that is language agnostic. Flash-X is a recipient of 2022 R&D 100 award, and is released under the open source Apache 2.0 license.",
+      "intro": "Flash-X, is a highly composable multiphysics software system that can be used to simulate physical phenomena in several scientific domains. It can simulates core collapse supernovae by modeling the fluid dynamics, nuclear reactions, and neutrino transport during the collapse and explosion.",
       "logo": "assets/images/flash-x.png"
     },
     {
@@ -34,7 +34,7 @@
     {
       "title": "TARDIS",
       "url": "https://tardis-sn.github.io/",
-      "intro": "TARDIS is an open-source Monte Carlo radiative-transfer spectral synthesis code for 1D models of supernova ejecta. It is designed for rapid spectral modelling of supernovae.",
+      "intro": "TARDIS is an open-source Monte Carlo radiative-transfer spectral synthesis code for 1D models of supernova ejecta. It is designed for rapid spectral modelling of supernovae. It provides several tools for physics calculation and visualization to make your supernova research easier.",
       "logo": "assets/images/tardis-logo-2.svg"
     }
   ]

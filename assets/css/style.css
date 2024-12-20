@@ -1086,6 +1086,12 @@ p {
   .single-features:hover .features-content .text {
     color: #fff; }
 
+  .features-icon > img {
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+  }
+
 /*===========================
          6.TEAM css 
 ===========================*/
