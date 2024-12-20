@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--====== Title ======-->
-    <title>TARDIS-Connector {{event_year}}</title>
+    <title>{{details.title}} {{event_year}}</title>
 
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="assets/images/tardis-logo-2.svg" type="image/png">
@@ -114,27 +114,26 @@
         </div>
 
         <div id="home" class="header-content-area bg_cover d-flex align-items-center"
-            style="background-image: url(assets/images/SN1994D.jpg)">
+            style="background-image: url(assets/images/bg_image.jpg)">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-10">
                         <div data-countdown="{{ start_date }}"></div>
                         <div class="header-content text-center">
-                            <h2 class="header-title">TARDIS-Con {{event_year}}</h2>
+                            <h2 class="header-title">{{details.title}} {{event_year}}</h2>
                             <h4 class="text-white">
                                 {{ start_date.strftime('%d') }}
-                                - {{ end_date.strftime('%d') }}{{ end_date.strftime('%B')
+                                - {{ end_date.strftime('%d') }} {{ end_date.strftime('%B')
                                 }}
                                 {{ end_date.strftime('%Y') }}
                             </h4>
-                            <h4 class="text-white">at Michigan State University, East Lansing, USA</h4>
+                            <h4 class="text-white">at {{details.location}}</h4>
                             <div class="col-xs-12" style="height:50px;"></div>
-                            <h3 class="text-white">TARDIS-Con {{event_year}} is an unconference-style conference
-                                focused on open science code and astrophysics. We believe that collaboration and
-                                open-source development are key to advancing the field of astrophysics and we are
-                                excited to bring together researchers and students from many disciplines such as
-                                astrophysics, software engineering, machine learning, and natural language processing.
-                            </h3>
+                            {%for para in details.desc%}
+                                <h3 class="text-white">
+                                {{para}}
+                                </h3>
+                            {%endfor%}
                             <ul class="header-btn">
                                 <!--
                                 <li><a class="main-btn main-btn-2" href="https://rebrand.ly/eventify-gg" rel="nofollow">Purchase Now</a></li>
@@ -157,14 +156,33 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-title text-center pb-20">
-                        <h2 class="title">Why You Should Join?</h2>
-                        <p class="text">We will be providing a platform for participants to come together and share
-                            their knowledge, expertise, and ideas. Our aim is to create an open and inclusive space
-                            where attendees can work collaboratively on scientific code, tools, and techniques.</p>
+                        {%set extra_info = details.extra_info %}
+                        <h2 class="title">{{extra_info.title}}</h2>
+                        {%for para in extra_info.desc %}
+                        <p class="text">
+                            {{para}}
+                        </p>
+                        {%endfor%}
                     </div> <!-- section title -->
                 </div>
             </div> <!-- row -->
             <div class="row justify-content-center">
+                {%for panel in details.panels%}
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-features text-center mt-30 wow fadeIn" data-wow-duration="1s"
+                        data-wow-delay="0s">
+                        <div class="features-icon">
+                            <img src="{{panel.logo}}" alt="{{panel.title}} 's logo">
+                        </div>
+                        <div class="features-content">
+                            <h4 class="features-title"><a href="{{panel.url}}">{{panel.title}}</a></h4>
+                            <p class="text">
+                                {{panel.intro}}
+                            </p>
+                        </div>
+                    </div> <!-- single features -->
+                </div>
+                {%endfor%}
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-features text-center mt-30 wow fadeIn" data-wow-duration="1s"
                         data-wow-delay="0s">
@@ -284,13 +302,13 @@
                 </div>
             </div> <!-- row -->
         </div> <!-- container -->
-        <div class="section-title text-center pb-20">
+        <!-- <div class="section-title text-center pb-20">
             <p class="text">In addition to these projects, we will have many other opportunities for participants to
                 work collaboratively on open science code in astrophysics. These include projects focused on machine
                 learning, natural language processing, and other cutting-edge techniques. By working together and
                 sharing our knowledge and expertise, we hope to drive forward the development of open science code and
                 advance our understanding of the universe.</p>
-        </div> <!-- section title -->
+        </div> section title -->
 
     </section>
 

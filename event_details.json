@@ -1,0 +1,41 @@
+{
+  "title": "Tardis-Connector",
+  "start_date": "2025/03/17",
+  "end_date": "2025/03/21",
+  "desc": [
+    "The TARDIS Connector Workshop 2025 is a collaborative event dedicated to advancing our understanding of stripped-envelope supernovae by leveraging the expertise and tools of the open science astrophysics community. This workshop will bring together specialists in atomic physics, stellar evolution, hydrodynamics, and radiative transport to develop workflows that connect stellar evolution models to synthetic observables."
+  ],
+  "location": "Center for Computational Astrophysics, Flatiron Institute, NewYork City, USA",
+  "extra_info": {
+    "title": "What are we trying to achieve?",
+    "desc": [
+      "This workshop offers a unique opportunity for collaborative problem-solving rather than traditional presentations. Developers and contributors across different software teams (MESA, Flash-X, STELLA, and TARDIS) will work together to tackle the interfaces between the codes. Our aim is to produce a comprehensive model framework and reproducible recipes to address the physics needed for stripped-envelope supernovae simulation."
+    ]
+  },
+  "panels": [
+    {
+      "title": "MESA",
+      "url": "https://docs.mesastar.org/en/24.08.1/",
+      "intro": "MESA is a powerful and versatile open-source software suite built to allow users to run experiments in stellar evolution. Stellar evolution calculations (i.e., stellar evolution tracks and detailed information about the evolution of internal and global properties) are a basic tool that enable a broad range of research in astrophysics. Areas that critically depend on high-fidelity and modern stellar evolution include asteroseismology, nuclear astrophysics, stellar populations, chemical evolution and population synthesis, astrobiology, binary stars, variable stars, supernovae, novae, compact objects, tidal disruption events, stellar hydrodynamics, and stellar activity.",
+      "logo": "assets/images/mesa.png"
+    },
+    {
+      "title": "FLASH-X",
+      "url": "https://flash-x.org/",
+      "intro": "Flash-X, is a highly composable multiphysics software system that can be used to simulate physical phenomena in several scientific domains. It is derived from FLASH, which has been a community code for several communities since late 1990s and early 2000s. The Flash-X architecture has been redesigned to be compatible with increasingly heterogeneous hardware platforms. A part of the redesign is a utilizing a newly designed performance portability layer that is language agnostic. Flash-X is a recipient of 2022 R&D 100 award, and is released under the open source Apache 2.0 license.",
+      "logo": "assets/images/flash-x.png"
+    },
+    {
+      "title": "STELLA",
+      "url": "",
+      "intro": "",
+      "logo": ""
+    },
+    {
+      "title": "TARDIS",
+      "url": "https://tardis-sn.github.io/",
+      "intro": "TARDIS is an open-source Monte Carlo radiative-transfer spectral synthesis code for 1D models of supernova ejecta. It is designed for rapid spectral modelling of supernovae.",
+      "logo": "assets/images/tardis-logo-2.svg"
+    }
+  ]
+}
