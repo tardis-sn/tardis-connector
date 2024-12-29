@@ -5,6 +5,7 @@
   "desc": [
     "The TARDIS Connector Workshop 2025 is a collaborative event dedicated to advancing our understanding of stripped-envelope supernovae by leveraging the expertise and tools of the open science astrophysics community. This workshop will bring together specialists in atomic physics, stellar evolution, hydrodynamics, and radiative transport to develop workflows that connect stellar evolution models to synthetic observables."
   ],
+  "time": "9:00",
   "location": "Center for Computational Astrophysics, Flatiron Institute, NewYork City, USA",
   "extra_info": {
     "title": "What are we trying to achieve?",
@@ -27,15 +28,47 @@
     },
     {
       "title": "STELLA",
-      "url": "",
-      "intro": "",
-      "logo": ""
+      "url": "https://github.com/sblinnikov/OpenStella",
+      "intro": "STELLA is a one-dimensional code used to simulate how light interacts with matter during stellar explosions like supernovae. It combines physics of motion (hydrodynamics) and radiation to create models of how supernovae properties evolve over time. The public version of STELLA is integrated with MESA.",
+      "logo": "assets/images/stella.png"
     },
     {
       "title": "TARDIS",
       "url": "https://tardis-sn.github.io/",
       "intro": "TARDIS is an open-source Monte Carlo radiative-transfer spectral synthesis code for 1D models of supernova ejecta. It is designed for rapid spectral modelling of supernovae. It provides several tools for physics calculation and visualization to make your supernova research easier.",
       "logo": "assets/images/tardis-logo-2.svg"
+    }
+  ],
+  "soc": [
+    {
+      "name": "Matteo Cantiello",
+      "imageSource": "assets/images/soc/matteo.png",
+      "institution": "Center for Computational Astrophysics, Flatiron Institute"
+    },
+    {
+      "name": "Sean Couch",
+      "imageSource": "assets/images/soc/couch-sean-cropped.jpg",
+      "institution": "Michigan State University"
+    },
+    {
+      "name": "Jared Goldberg",
+      "imageSource": "assets/images/soc/jared.png",
+      "institution": "Center for Computational Astrophysics, Flatiron Institute"
+    },
+    {
+      "name": "Wolfgang Kerzendorf",
+      "imageSource": "assets/images/soc/wolfgang.jpg",
+      "institution": "Michigan State University"
+    },
+    {
+      "name": "Jing Lu",
+      "imageSource": "assets/images/soc/jing.jpg",
+      "institution": "Michigan State University"
+    },
+    {
+      "name": "Brian Metzger",
+      "imageSource": "assets/images/soc/bmetzger.jpg",
+      "institution": "Center for Computational Astrophysics, Flatiron Institute"
     }
   ]
 }

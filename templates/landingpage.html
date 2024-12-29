@@ -169,19 +169,19 @@
             <div class="row justify-content-center">
                 {%for panel in details.panels%}
                 <div class="col-lg-3 col-md-6 col-sm-8">
-                    <div class="single-features text-center mt-30 wow fadeIn" data-wow-duration="1s"
-                        data-wow-delay="0s">
-                        <div class="features-icon">
-                            <img src="{{panel.logo}}" alt="{{panel.title}} 's logo">
-                        </div>
-                        <div class="features-content">
-                            <h4 class="features-title"><a href="{{panel.url}}">{{panel.title}}</a></h4>
-                            <p class="text">
-                                {{panel.intro}}
-                            </p>
-                        </div>
+                    <a href="{{panel.url}}" class="card-link">
+                    <div class="single-features text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                            <div class="features-icon">
+                                <img src="{{panel.logo}}" alt="{{panel.title}} 's logo">
+                            </div>
+                            <div class="features-content">
+                                <h4 class="features-title">{{panel.title}}</h4>
+                                <p class="text">{{panel.intro}}</p>
+                            </div>
                     </div> <!-- single features -->
+                </a>
                 </div>
+                
                 {%endfor%}
                 <!-- <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-features text-center mt-30 wow fadeIn" data-wow-duration="1s"
@@ -203,6 +203,40 @@
                     </div>
                 </div> -->
             </div> <!-- row -->
+            <div class="row justify-content-center mt-5">
+                <div class="col-12">
+                    <div class="section-title text-center pb-20">
+                        <h2 class="title">Scientific Organizing Committee</h2>
+                    </div>
+                </div>
+                {% for member in details.soc %}
+                <div class="col-lg-3 col-md-6 col-sm-8 mb-4"> <!-- Wider columns -->
+                    <div class="single-features text-center mt-30 wow fadeIn" 
+                         data-wow-duration="1s" 
+                         data-wow-delay="0s" 
+                         style="margin: auto; padding: 20px; border-top-right-radius: 30px; border-bottom-left-radius: 30px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                        <div class="features-icon">
+                            <img src="{{member.imageSource}}" 
+                                 alt="{{member.name}}'s logo" 
+                                 style="border-radius: 50%; width: 120px; height: 120px; object-fit: cover;">
+                        </div>
+                        <div class="features-content" style="margin-top: 15px;">
+                            <div class="name" style="font-weight: bold; font-size: 1.5rem; color: black; margin-bottom: 20px;">
+                                {{member.name}}
+                            </div>
+                            <div class="text" style="padding: 10px; text-align: center; color: black; font-size: 1rem;">
+                                {{member.institution}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            
+            
+            
+            
+            
         </div> <!-- container -->
         <!-- <div class="section-title text-center pb-20">
             <p class="text">In addition to these projects, we will have many other opportunities for participants to

@@ -1070,7 +1070,6 @@ p {
       transition: all 0.3s ease-out 0s; }
     .single-features .features-content .text {
       margin-top: 25px;
-      text-align: justify !important;
       -webkit-transition: all 0.3s ease-out 0s;
       -moz-transition: all 0.3s ease-out 0s;
       -ms-transition: all 0.3s ease-out 0s;
@@ -1568,3 +1567,38 @@ p {
   .back-to-top:hover {
     color: #fff;
     background-position: right center; }
+
+
+  .soc-section .single-features {
+      margin: auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .soc-section .features-icon img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+  }
+  
+  .soc-section .features-content {
+      margin-top: 15px;
+  }
+  
+  .soc-section .features-content .name {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: black;
+      margin-bottom: 20px;
+  }
+  
+  .soc-section .features-content .text {
+      padding: 10px;
+      text-align: center;
+      color: black;
+      font-size: 1rem;
+  }
+  
+  
