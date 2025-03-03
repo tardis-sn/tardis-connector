@@ -36,6 +36,12 @@
     <!--====== Style css ======-->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <style>
+        #doc-title .name {
+            font-size: 2rem;
+            text-align: center;
+        }
+    </style>
 
 </head>
 
@@ -65,13 +71,13 @@
     <!--====== HEADER PART START ======-->
 
     <header class="header-area">
-        <div class="navbar-area navbar-two">
+        <div class="navbar-area navbar-two" style="background-color: #333;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg">
                             <a class="navbar-brand" href="index.html">
-                                <img src="assets/images/tardis-logo-2-white.svg" width=80px alt="Logo">
+                                <img src="assets/images/tardis-logo-2-white.svg" width="40px" alt="Logo">
                             </a>
 
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTwo"
@@ -80,34 +86,26 @@
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
                             </button>
-                            <!--
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarTwo">
                                 <ul class="navbar-nav m-auto">
                                     <li class="nav-item active">
                                         <a class="page-scroll" href="#home">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#event">Schedules</a>
+                                        <a class="page-scroll" href="#features">Agenda</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#team">Speakers</a>
+                                        <a class="page-scroll" href="#team">SOC</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#gallery">Gallery</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#pricing">Pricing</a>
+                                        <a class="page-scroll" href="#schedule">Schedule</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="page-scroll" href="#contact">Contact</a>
                                     </li>
                                 </ul>
                             </div>
-                            
-                            <div class="navbar-btn d-none d-sm-inline-block">
-                                <a class="main-btn" href="#">Get a Ticket</a>
-                            </div>
-                        </nav> <!-- navbar -->
+                        </nav>
                     </div>
                 </div> <!-- row -->
             </div> <!-- container -->
@@ -126,7 +124,7 @@
                                 - 21 March
                                 2025
                             </h4>
-                            <h4 class="text-white">at 12th Floor, Flatiron Building, 175 5th Avenue, New York, NY 10010</h4>
+                            <h4 class="text-white">at 12th Floor, Flatiron Institute, 162 5th Avenue, New York, NY 10010</h4>
                             <div class="col-xs-12" style="height:50px;"></div>
                             
                             <h3 class="text-white">
@@ -251,7 +249,7 @@
                     </div>
                 </div> -->
             </div> <!-- row -->
-            <div class="row justify-content-center mt-5">
+            <div id="team" class="row justify-content-center mt-5">
                 <div class="col-12">
                     <div class="section-title text-center pb-20">
                         <h2 class="title">Scientific Organizing Committee</h2>
@@ -389,6 +387,20 @@
 
     </section>
 
+    <section id="schedule" class="features-area pb-30 gray-bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="section-title text-center pb-20">
+                        <h2 class="title">Event Schedule</h2>
+                    </div>
+                    <div class="iframe-container" style="position: relative; overflow: hidden; padding-top: 56.25%;">
+                        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTkwBsy19g8wHplojXc-r9sCZddTeKjzVozef3qCuhpk48LMsJ_mjf8LKolvUUDbBwJwtsVXjcfw6F-/pubhtml?widget=true&amp;headers=false&amp;chrome=false&amp;rm=demo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!--====== CONTACT PART START ======-->
 
@@ -479,7 +491,6 @@
 
     <!--====== wow js ======-->
     <script src="assets/js/wow.min.js"></script>
-
 
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
