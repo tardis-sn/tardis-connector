@@ -3,7 +3,7 @@
 
 # Notebook to create new html pages
 
-# In[37]:
+# In[8]:
 
 
 from pathlib import Path
@@ -12,7 +12,7 @@ from datetime import datetime
 import json
 
 
-# In[38]:
+# In[9]:
 
 
 TEMPLATE_PATH = Path("templates")
@@ -23,14 +23,14 @@ environment = Environment(
 )
 
 
-# In[39]:
+# In[10]:
 
 
 with open('event_details.json', 'r') as f:
     details = json.load(f)
 
 
-# In[40]:
+# In[11]:
 
 
 # YYYY/MM/DD format
@@ -50,7 +50,7 @@ event_year = end_date_datetime.year
 html_page_name = f"{event_year}.html"
 
 
-# In[41]:
+# In[12]:
 
 
 page_template = environment.get_template("landingpage.html")
@@ -67,7 +67,7 @@ with open(page_html_path, mode="w", encoding="utf-8") as page:
     page.write(page_content)
 
 
-# In[42]:
+# In[13]:
 
 
 # import time
@@ -101,7 +101,7 @@ with open(page_html_path, mode="w", encoding="utf-8") as page:
 #     time.sleep(1)
 
 
-# In[43]:
+# In[14]:
 
 
 page_template = environment.get_template("index_template.html")
